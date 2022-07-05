@@ -61,6 +61,10 @@ body {
     background: $black;
 }
 
+section {
+    padding: 3rem 9%;    
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -155,11 +159,68 @@ body {
     }
 }
 
+.home {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    background: url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .tree {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+        z-index: 10;
+    }
+
+    .mountain {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 40rem;
+        width: 100%;
+        object-fit: cover;
+        z-index: 5;
+    }
+
+    .moon {
+        position: absolute;
+        top: 10rem;
+        left: 50%;
+        width: 20vw;
+        transform: translateX(-180%);
+        z-index: 2;
+    }
+
+    .cloud-1 {
+        position: absolute;
+        top: 20rem;
+        left: 0;
+        width: 60vw;
+    }
+
+    .cloud-2 {
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        width: 60vw;
+    }
+}
+
 // media queries
 
 @media (max-width: 1200px) {
     .header {
         padding: 1.5rem 2rem;
+    }
+
+    section {
+        padding: 3rem 3rem;    
     }
 }
 
